@@ -30,7 +30,7 @@ if (href.indexOf('http://m.newsmth.net/section') == 0) {
 		} else if (a.pathname.indexOf('/board/') == 0) { // board
 			boards.push({
 				name: a.pathname.match(/\/([^\/]+$)/)[1],
-				title: a.innerHTML
+				cnName: a.innerHTML
 			});
 		}
 	}
